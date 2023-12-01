@@ -1,7 +1,8 @@
-import './style.css'
-import javascriptLogo from './javascript.svg'
+import '../style.css'
+import javascriptLogo from '../assets/javascript.svg'
 import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.js'
+const { BASE_URL } = import.meta.env
 
 document.querySelector('#app').innerHTML = `
   <div>
