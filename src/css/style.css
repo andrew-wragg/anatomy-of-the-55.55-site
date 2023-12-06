@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto+Condensed:wght@700&display=swap');
+
+:root {
+  font-family: 'Poppins', sans-serif;
+  line-height: normal;
+  font-weight: 400;
+  font-size: 18px;
+  font-synthesis: none;
+  color-scheme: dark light;
+  color: #ffffff;
+  background-color: #000000;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  position: relative;
+  display: block;
+}
+
+
+section, footer {
+  z-index: 1;
+  background-color: #000;
+  color: #fff;
+  position: relative;
+}
+
+.full-screen-section {
+  height: 100vh;
+  min-height: 750px;
+}
+
+.double-screen-section {
+  height: 200vh;
+  min-height: 1500px;
+}
+
+.half-screen-section {
+  height: 50vh;
+  min-height: 450px;
+}
+
+section-inner-container {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  max-width: 1920px;
+  position: inherit;
+  height: 100%;
+  margin: auto;
+  justify-content: center;
+}
+
+footer section-inner-container {
+  flex-direction: column;
+  justify-content: center;
+}
+
+left-container,
+right-container {
+  width: 50%;
+  display: flex;
+  background-color: #F00;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+left-container {
+  background-color: #0F0;
+}
+
+.white {
+  background-color: #fff;
+  color: #000;
+}
+
+
+@media (width <= 768px) {
+
+  section-inner-container {
+    flex-direction: column;
+  }
+
+  left-container, right-container {
+    width: 100%;
+  }
+
+}
