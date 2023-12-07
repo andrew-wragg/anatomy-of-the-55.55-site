@@ -1,0 +1,116 @@
+nav {
+    padding: 0;
+    max-height: 46px;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #252525;
+    border-radius: 10px;
+    width: 240px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  nav button {
+    background-color: #252525;
+    color: white;
+    cursor: pointer;
+    padding: 11px;
+    padding-left: 33px;
+    width: 100%;
+    height: 46px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1.3px;
+    transition-duration: 100ms;
+    transition-property: background-color;
+  }
+  
+  nav button:after {
+    content: '\02162';
+    float: right;
+    margin-left: 5px;
+    margin-top: -3px;
+    transform: rotate(90deg);
+    font-size: 21px;
+    font-weight: 200;
+  }
+
+  span.diamond-icon {
+    background-image: url(diamond-icon.svg);
+    background-repeat: no-repeat;
+    margin: 0;
+    margin-left: -18px;
+    margin-top: -4px;
+    padding: 0;
+    vertical-align: baseline;
+    display: inline-block;
+    width: 18px;
+    height: 20px;
+    background-size: contain;
+    vertical-align: middle;
+  }
+
+  nav ul {
+    position: relative;
+    margin-top: -34px;
+    margin-bottom: 20px;
+    letter-spacing: 1.3px;
+    padding-left: 33px;
+    width: 205px;
+    background-color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition-duration: 200ms, 0ms;
+    transition-property: opacity, visibility;
+    transition-delay: 0ms, 200ms;
+  }
+  
+  nav ul li {
+    margin-bottom: 12px;
+    list-style-type: none;
+  }
+  
+  nav ul a {
+    color: #A4A4A4;
+    text-decoration: none;
+  }
+  
+  nav ul a:hover, nav ul a:active {
+    color: #000000;
+  }
+
+  nav.active button:after {
+    content: '\02715';
+  }
+  
+  nav:hover {
+    background-color: #FFF;
+    color: #000;
+    border: #000 0.5px solid;
+  }
+
+  nav.active, nav.active button, nav button:hover {
+    background-color: #FFF;
+    color: #000;
+  }
+
+  nav.active {
+    border: #000 0.5px solid;
+  }
+
+  /* FadeIn animation for expanded nav items */
+  nav.active ul {
+    opacity: 1; 
+    visibility: visible; 
+    transition-duration: 200ms, 0ms; 
+    transition-property: opacity, visibility; 
+    transition-delay: 0ms, 0ms; 
+  }
+  
+
+  
