@@ -1,15 +1,15 @@
 .from-bottom {
-    transform: translateY(40%);
-    transition: all 1s ease-out;
+    transform: translateY(60%);
+    transition: transform 1s ease-out;
 }
 
 .from-left {
-    transform: translateX(-200%);
+    transform: translateX(-100%);
     transition: all 1s ease-out;
 }
 
 .from-right {
-    transform: translateX(200%);
+    transform: translateX(100%);
     transition: all 1s ease-out;
 }
 
@@ -20,7 +20,7 @@
 
 .blur {
     filter: blur(50px);
-    transition: all 1s ease-out;
+    transition: filter 0.7s ease-out;
 }
 
 .active {
