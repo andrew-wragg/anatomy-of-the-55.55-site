@@ -1,10 +1,10 @@
 export function init() {
 
-    var btnList = document.querySelectorAll('nav button');
+    let btnList = document.querySelectorAll('nav button');
 
-    for (var i = 0; i < btnList.length; i++) {
+    for (let i = 0; i < btnList.length; i++) {
         btnList[i].addEventListener('click', function() {
-            var nav = this.parentElement;
+            let nav = this.parentElement;
             nav.classList.toggle('active');
 
             if (nav.style.maxHeight){
