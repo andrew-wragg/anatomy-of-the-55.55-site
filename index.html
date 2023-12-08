@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>The anatomy of the 55.55</title>
   </head>
   <body>
@@ -25,8 +25,8 @@
       <section class="full-screen-section section-1">
         <section-inner-container>
           <left-container>
-            <h1 class="fade-in">THE ANATOMY OF THE<br/><span>55.55</span></h1>
-            <p class="fade-in ">
+            <h1>THE ANATOMY OF THE<br/><span>55.55</span></h1>
+            <p>
               The Iconic CHANEL N°5 Celebrates 100 Years With a Magnificent Work of Art
             </p>
           </left-container>
@@ -34,7 +34,7 @@
             <img src="/diamond.jpg" 
               alt="A large radiant cut rectangular diamond" 
               id="img-diamond" 
-              class="blur" />
+              class="on-load-blur" />
           </right-container>
         </section-inner-container>
       </section>
@@ -87,18 +87,18 @@
       <section class="full-screen-section section-5 white">
         <section-inner-container>
           <left-container>
-              <p>
+              <p class="from-left fade-in">
                 “Gabrielle Chanel approached the universes of fragrances and jewelry with the same visionary 
                 values, focusing on audacity and the quest of excellence. I wanted to rediscover that creative 
                 gesture with this collection.”
               </p>
-              <p>
+              <p class="fade-in">
                 — Patrice Leguéreau.<br/>
                 Director of the Fine Jewelry Creation Studio
               </p>
           </left-container>
-          <right-container>
-            <img src="/no5-perfume-top.jpg" 
+          <right-container class=" fade-in">
+            <img class="from-right " src="/no5-perfume-top.jpg" 
               alt="The top of a bottle of CHANEL N°5 perfume" 
               id="img-perfume-top" />
           </right-container>
@@ -116,12 +116,12 @@
       <section class="double-screen-section section-7">
         <section-inner-container>
           <right-container>
-              <p>
+              <p class="fade-in blur">
                 The classic glass flacon features elegant, clean lines with a monochromatic white label and chic 
                 black lettering. Leguéreau was inspired by the perfume decanter’s beloved design and envisioned a 
                 magnificent necklace that shared its silhouette.
               </p>
-              <p>
+              <p class="fade-in blur">
                 To create a visual impact worthy of the fragrance’s culture-defining legacy, Leguéreau had the 
                 idea for an impeccable, Flawless Type IIa 55.55-carat center diamond.
               </p>
@@ -129,7 +129,8 @@
           <left-container>
             <img src="/no5-perfume-bottle.jpg" 
               alt="A black and white bottle of CHANEL N°5 perfume" 
-              id="img-perfume-bottle" />
+              id="img-perfume-bottle" 
+              class="from-left fade-in"/>
           </left-container>
         </section-inner-container>
       </section>
@@ -137,11 +138,11 @@
       <section class="full-screen-section section-8">
         <section-inner-container>
           <left-container>
-            <p>
+            <p class="fade-in blur">
               “This is an unprecedented approach. We started with a rough diamond that we had cut, not to make 
               the biggest stone possible but to obtain a perfect octagonal diamond weighing 55.55 carats.”
             </p>
-            <p>
+            <p class="fade-in blur">
               — Patrice Leguéreau.<br/>
               Director of the Fine Jewelry Creation Studio
             </p>
@@ -149,7 +150,8 @@
           <right-container>
             <img src="/necklace.jpg" 
               alt="The 55.55 necklace against a black background" 
-              id="img-perfume-bottle" />
+              id="img-perfume-bottle"
+              class="from-right fade-in"/>
           </right-container>
         </section-inner-container>
       </section>
@@ -159,27 +161,32 @@
           <img-container class="img-first">
             <img src="/gallery-1.jpg" 
               alt="The 55.55 necklace and other pieces from the Collection N°5" 
-              id="gallery-1" />
+              id="gallery-1"
+              class="fade-in"/>
           </img-container>
           <img-container class="img-second">
             <img src="/gallery-2.jpg" 
               alt="Sepia illustration of the CHANEL storefront in Paris" 
-              id="gallery-2" />
+              id="gallery-2" 
+              class="from-left fade-in"/>
           </img-container>
           <img-container class="img-third">
             <img src="/gallery-3.jpg" 
               alt="A craftsman working on the 55.55 necklace" 
-              id="gallery-3" />
+              id="gallery-3" 
+              class="from-left fade-in"/>
           </img-container>
           <img-container class="img-fourth">
             <img src="/gallery-4.jpg" 
               alt="The 55.55 necklace on a mannequin bust" 
-              id="gallery-4" />
+              id="gallery-4" 
+              class="from-right fade-in"/>
           </img-container>
           <img-container class="img-fifth">
             <img src="/gallery-5.jpg" 
               alt="Selection of historical CHANEL illustrations"
-              id="gallery-5" />
+              id="gallery-5" 
+              class="from-right fade-in"/>
           </img-container>
         </section-inner-container>
       </section>
@@ -215,7 +222,7 @@
       </section>
 
       <section class="full-screen-section section-11 fade-in" preload="auto" id="thenecklace">
-        <video muted id="theVideo">
+        <video muted playsinline id="theVideo">
           <source src="/video.mp4" type="video/mp4">
         </video>
       </section>
