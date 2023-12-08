@@ -1,10 +1,11 @@
 # anatomy-of-the-55.55-site
 
-[Site hosted on GitHub Pages]: https://andrew-wragg.github.io/anatomy-of-the-55.55-site/
+ * Site hosted on GitHub Pages: https://andrew-wragg.github.io/anatomy-of-the-55.55-site/
+ * Build folder: https://github.com/andrew-wragg/anatomy-of-the-55.55-site/tree/main/dist
 
 This project is a single page responsive microsite with custom on-scroll css animation.
 
-It is built using ViteJS for development with auto-deployment to github pages on git commit.
+It uses ViteJS for development, with auto-deployment to github pages when pushing new commits.
 
 # Setup
 After cloning the repository, simply install the dependencies:
