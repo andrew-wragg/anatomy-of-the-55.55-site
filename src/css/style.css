@@ -7,8 +7,8 @@
   font-size: 18px;
   font-synthesis: none;
   color-scheme: dark light;
-  color: #ffffff;
-  background-color: #000000;
+  color: #fff;
+  background-color: #000;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -19,11 +19,16 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
+  min-height: 100vh;
+  max-width: calc(100vw - (100vw - 100%));
 }
+
 
 img {
   position: relative;
@@ -80,15 +85,10 @@ left-container,
 right-container {
   width: 50%;
   display: flex;
-  /*background-color: #F00;*/
   align-items: center;
   height: 100%;
   flex-direction: column;
   justify-content: center;
-}
-
-left-container {
-  /*background-color: #0F0;*/
 }
 
 .white {
@@ -127,6 +127,7 @@ left-container {
   font-size: calc(15px + 2vw);
   text-align: left;
   margin-bottom: 0px;
+  padding-top: 15%;
 }
 
 .section-1 h1 span {
@@ -143,8 +144,8 @@ left-container {
 }
 
 .section-1 p {
-  width: 522px;
-  font-size: 25px;
+  max-width: 522px;
+  font-size: calc(15px + 0.5vw);
   line-height: 30px;
   text-align: left;
 }
@@ -160,6 +161,21 @@ left-container {
 .section-2 p {
   max-width: 526px;
   font-size: 18px;
+}
+
+.section-3 img {
+  padding: 15% 5%;
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+}
+
+.section-3 p {
+  color: #000;
+  font-weight: 700;
+  font-size: 35px;
+  max-width: 520px;
+  text-align: left;
 }
 
 .section-4 p {
@@ -181,7 +197,7 @@ left-container {
 .section-5 p {
   color: #000;
   font-weight: 700;
-  font-size: 35px;
+  font-size: calc(15px + 1vw);
   max-width: 783px;
   padding: 0;
   margin: 8px;
@@ -215,7 +231,7 @@ left-container {
   max-height: 1520px;
   max-width: 1110px;
   height: 100vh;
-  width: 50vw;
+  width: 100%;
   object-fit: contain;
   float: right;
 }
@@ -226,6 +242,8 @@ left-container {
   font-size: 18px;
   font-weight: 400;
   line-height: 120%;
+  text-align: left;
+  margin: 10px 0;
 }
 
 .section-7 section-inner-container {
@@ -238,16 +256,21 @@ left-container {
 
 .section-8 img {
   float: right;
-  margin-top: -65vh;
+  margin-top: -101%;
+  width: auto;
+  height: auto;
+  max-height: 1684px;
+  max-width: 100%;
 }
 
 .section-8 p {
   font-weight: 700;
-  font-size: 35px;
-  margin-top: 10vh;
+  font-size: calc(15px + 1vw);
   margin-left: 155px;
   position: relative;
   max-width: 783px;
+  text-align: left;
+  width: calc(100% - 155px);
 }
 
 .section-8 p:nth-child(2)  {
@@ -273,6 +296,7 @@ left-container {
   grid-template-columns: 27% 46% 27%;
   grid-template-rows: 50vh 50vh;
   grid-auto-flow: column;
+  padding-top: 20%;
 }
 
 .section-9 img-container {
@@ -329,6 +353,8 @@ left-container {
 
 .section-11 {
   z-index: 0;
+  transform: none!important;
+  filter: none!important;
 }
 
 .section-11 video {
@@ -340,11 +366,15 @@ left-container {
   left: 0;
 }
 
+.section-11.active {
+  opacity: 1;
+}
+
 .section-12 p {
   font-weight: 700;
   font-size: calc(15px + 1vw);
   line-height: 120%;
-  max-width: 1060px;
+  max-width: 55vw;
   text-align: center;
 }
 
@@ -353,6 +383,7 @@ footer p {
   font-weight: 700;
   font-size: 35px;
   line-height: 140%;
+  padding-top: 2%;
 }
 
 footer p a {
@@ -365,10 +396,16 @@ footer p a {
 
   section-inner-container {
     flex-direction: column;
+    overflow-x: hidden;
   }
 
   left-container, right-container {
     width: 100%;
+  }
+
+  p {
+    padding: 3.5%;
+    text-align: left;
   }
 
   header {
@@ -377,8 +414,205 @@ footer p a {
     margin-left: -120px;
   }
 
+  .section-1 {
+    height: auto;
+  }
+
+  .section-1 left-container,  .section-1 right-container {
+    z-index: auto;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+  }
+
+  .section-1 right-container img {
+    width: 68%;
+    left: auto;
+    top: auto;
+  }
+
+  .section-1 h1 {
+    text-align: center;
+    font-size: 25px;
+    padding-top: 30%;
+  }
+
+  .section-1 h1 span {
+    text-align: center;
+    font-size: 160px;
+    letter-spacing: -19px;
+    line-height: 150px;
+  }
+
+  .section-1 p {
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    padding: 15px;
+  }
+
   .section-2 p {
     font-size: 17px;
+    line-height: 24px;
+  }
+
+  .section-3 {
+    height: auto;
+  }
+
+  .section-3 img {
+    width: 100%;
+    padding: 30% 12px 5% 12px;
+  }
+
+  .section-3 p {
+    font-size: 20px;
+    padding: 12px;
+    font-weight: 600;
+    line-height: 121%;
+  }
+
+  .section-4 p {
+    font-size: 17px;
+    padding: 12px;
+  }
+
+  .section-5 {
+    min-height: 1250px;
+  }
+
+  .section-5 section-inner-container {
+    flex-direction: column-reverse;
+  }
+
+  .section-5 left-container {
+    padding: 0;
+    align-items: center;
+  }
+
+  .section-5 right-container {
+    padding: 0;
+    align-items: flex-end;
+  }
+
+  .section-5 p {
+    font-size: 20px;
+    padding: 12px;
+    margin: 0;
+    width: 100%;
+  }
+
+  .section-5 p br {
+    display: none;
+  }
+
+  .section-5 p:nth-child(2)  {
+    font-size: 17px;
+  }
+
+  .section-5 img {
+    width: 95%;
+  }
+
+  .section-6 {
+    height: 60vh;
+    min-height: auto;
+  }
+
+  .section-6 section-inner-container {
+    justify-content: flex-end;
+
+  }
+
+
+
+  .section-6 p {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 120%;
+    text-align: left;
+    max-width: none;
+  }
+
+  .section-7 {
+    height: 200vh;
+    min-height: auto;
+  }
+
+  .section-7 section-inner-container {
+    flex-direction: column;
+  }
+
+  .section-7 img {
+    width: 100%;
+  }
+
+  .section-8 {
+    height: auto;
+  }
+
+  .section-8 p {
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 0;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .section-8 p br {
+    display: none;
+  }
+
+  .section-8 img {
+    margin-top: auto;
+    width: 100%;
+  }
+
+  .section-9 {
+    height: auto;
+  }
+
+  .section-9 section-inner-container {
+    display: flex;
+  }
+
+  .section-10 {
+    min-height: 1200px;
+  }
+
+  .section-10 p {
+    font-size: 17px;
+    padding: 12px;
+    line-height: 20px;
+  }
+
+  .section-11 video {
+    width: 100%;
+  }
+
+  .section-12 p, footer p {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    padding-top: 5%;
+    max-width: none;
+  }
+
+  footer img {
+    width: 244px;
+  }
+
+}
+
+
+
+@media (min-width: 1920px) {
+
+  .section-3 img {
+    max-height: 1239px;
+    max-width: 929px;
+    width: auto;
   }
 
 }
