@@ -28,10 +28,6 @@ export function init() {
                 // Remove the class 'active' from the element that is out of view.  Reversing the in-view CSS animation.
                 entry.target.classList.remove('active');
 
-                if (entry.target.id == 'thenecklace') {
-                    stopVid(theVideo);
-                }
-
             }
         });
     }
@@ -51,10 +47,6 @@ export function init() {
 function playVid(vidElement) {
 
     vidElement.play();
-}
-
-function stopVid(vidElement) {
-
 }
 
 function animateOnLoad() {
