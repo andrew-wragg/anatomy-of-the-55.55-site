@@ -44,7 +44,7 @@ export function init() {
 
 
 
-    const myTimeout = setTimeout(animateOnLoad, 500);
+    const myTimeout = setTimeout(animateOnLoad, 1000);
 
 }
 

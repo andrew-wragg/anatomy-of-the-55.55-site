@@ -1,6 +1,5 @@
 .from-bottom {
     transform: translateY(60%);
-
 }
 
 .from-left {
@@ -11,7 +10,6 @@
 .from-right {
     transform: translateX(65%);
     transition: transform 1s ease-out, opacity 1s ease-out;
-
 }
 
 .fade-in {
@@ -21,7 +19,6 @@
 
 .blur {
     filter: blur(50px);
-
 }
 
 .active {
@@ -31,15 +28,13 @@
     transition: all 1s ease-out;
 }
 
-.on-load-blur {
+.on-load {
     opacity: 0;
-    filter: blur(100px);
-
+    transform: translateY(60%);
 }
 
 .on-load-active {
     opacity: 1;
-    filter: blur(0px);
-    transition: all 1s ease-out;
+    transform: translateY(0);
+    transition: all 1.2s ease-out;
 }
-
