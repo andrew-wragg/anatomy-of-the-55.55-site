@@ -29,7 +29,6 @@ body {
   max-width: calc(100vw - (100vw - 100%));
 }
 
-
 img {
   position: relative;
   display: block;
@@ -41,7 +40,6 @@ header {
   top: 53px;
   z-index: 999;
 }
-
 
 section, footer {
   z-index: 1;
@@ -96,7 +94,6 @@ right-container {
   color: #000;
 }
 
-
 .section-1 {
   min-height: 1000px;
 }
@@ -149,7 +146,6 @@ right-container {
   line-height: 30px;
   text-align: left;
 }
-
 
 .section-2 section-inner-container {
   align-items: center;
@@ -252,6 +248,10 @@ right-container {
 
 .section-8 {
   height: 125vh;
+}
+
+.section-8 right-container {
+  align-items: flex-end;
 }
 
 .section-8 img {
@@ -381,7 +381,7 @@ right-container {
 footer p {
   max-width: 960px;
   font-weight: 700;
-  font-size: 35px;
+  font-size: calc(15px + 1vw);
   line-height: 140%;
   padding-top: 2%;
 }
@@ -522,10 +522,7 @@ footer p a {
 
   .section-6 section-inner-container {
     justify-content: flex-end;
-
   }
-
-
 
   .section-6 p {
     font-weight: 700;
@@ -604,7 +601,6 @@ footer p a {
   }
 
 }
-
 
 
 @media (min-width: 1920px) {
