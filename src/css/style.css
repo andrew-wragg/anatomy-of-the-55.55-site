@@ -609,6 +609,20 @@ footer p a {
 
 @media (min-width: 1920px) {
 
+  .section-1 h1 {
+    font-size: 50px;
+  }
+  
+  .section-1 h1 span {
+    letter-spacing: -41px;
+    text-indent: -3.5%;
+    line-height: 400px;
+    font-size: 500px;
+  }
+  .section-1 p {
+    font-size: 25px;
+  }
+  
   .section-3 img {
     max-height: 1239px;
     max-width: 929px;
