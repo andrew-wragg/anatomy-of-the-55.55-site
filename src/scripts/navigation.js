@@ -5,7 +5,7 @@ export function init() {
     for (let i = 0; i < btnList.length; i++) {
         btnList[i].addEventListener('click', function() {
             let nav = this.parentElement;
-            nav.classList.toggle('active');
+            nav.classList.toggle('active-nav');
 
             if (nav.style.maxHeight){
                 nav.style.maxHeight = null;

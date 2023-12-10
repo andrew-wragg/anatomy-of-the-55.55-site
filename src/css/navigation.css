@@ -31,23 +31,20 @@ nav {
   }
   
   nav button:after {
-    content: '\02162';
+    content: url(hamburger-icon-white.svg);
+    margin: 0;
     float: right;
-    margin-left: 5px;
-    margin-top: -3px;
-    transform: rotate(90deg);
-    font-size: 21px;
-    font-weight: 200;
+    width: 21px;
+    height: 23px;
+    margin-top: 3px;
+    margin-right: 3px;
   }
 
   span.diamond-icon {
-    background-image: url(diamond-icon.svg);
+    background-image: url('diamond-icon.svg');
     background-repeat: no-repeat;
-    margin: 0;
     margin-left: -18px;
     margin-top: -4px;
-    padding: 0;
-    vertical-align: baseline;
     display: inline-block;
     width: 18px;
     height: 20px;
@@ -83,10 +80,6 @@ nav {
   nav ul a:hover, nav ul a:active {
     color: #000000;
   }
-
-  nav.active button:after {
-    content: '\02715';
-  }
   
   nav:hover {
     background-color: #FFF;
@@ -94,17 +87,31 @@ nav {
     border: #000 0.5px solid;
   }
 
-  nav.active, nav.active button, nav button:hover {
-    background-color: #FFF;
-    color: #000;
+  nav:hover button:after {
+    content: url(hamburger-icon-black.svg);
   }
 
-  nav.active {
+  nav.active-nav, nav.active-nav button, nav button:hover {
+    background-color: #FFF;
+    color: #000;
+    stroke: #000;
+    fill: #000;
+  }
+
+  nav.active-nav button:after {
+    content: '\02715';
+    float: right;
+    font-size: 21px;
+    margin-top: -3px;
+    margin-right: 1px;
+  }
+
+  nav.active-nav {
     border: #000 0.5px solid;
   }
 
   /* FadeIn animation for expanded nav items */
-  nav.active ul {
+  nav.active-nav ul {
     opacity: 1; 
     visibility: visible; 
     transition-duration: 200ms, 0ms; 
