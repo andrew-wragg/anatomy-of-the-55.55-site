@@ -3,7 +3,7 @@ export function init() {
     const intersectionOptions = {
         root: null, // root element. Null is the viewport.
         rootMargin: '0px 110% 0px 110%', // margin around root. Values are similar to css property. Unitless values not allowed
-        threshold: 0.2 // trigger intersection callback when 25% of the element is visible
+        threshold: 0.15 // trigger intersection callback when 25% of the element is visible
     };
 
     let theVideo = document.getElementById('theVideo');

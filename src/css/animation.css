@@ -1,3 +1,6 @@
+/* Classes for animating elements on the page */
+
+/* The following classes can be added to html elements to set their initial state, before animation. */
 .from-bottom {
     transform: translateY(60%);
 }
@@ -21,6 +24,7 @@
     filter: blur(50px);
 }
 
+/* the active class is dynamically added to elements when they are in the viewport, animating them into position */
 .active {
     opacity: 1;
     transform: translateY(0) translateX(0);
@@ -28,6 +32,7 @@
     transition: all 1s ease-out;
 }
 
+/* The following classes are used for the onload animation in the title section */
 .on-load {
     opacity: 0;
     transform: translateY(60%);
