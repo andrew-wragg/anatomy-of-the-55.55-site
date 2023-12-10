@@ -3,7 +3,7 @@ function init$1() {
   for (let i = 0; i < btnList.length; i++) {
     btnList[i].addEventListener("click", function() {
       let nav = this.parentElement;
-      nav.classList.toggle("active");
+      nav.classList.toggle("active-nav");
       if (nav.style.maxHeight) {
         nav.style.maxHeight = null;
       } else {
@@ -18,7 +18,7 @@ function init() {
     // root element. Null is the viewport.
     rootMargin: "0px 110% 0px 110%",
     // margin around root. Values are similar to css property. Unitless values not allowed
-    threshold: 0.2
+    threshold: 0.15
     // trigger intersection callback when 25% of the element is visible
   };
   let theVideo = document.getElementById("theVideo");

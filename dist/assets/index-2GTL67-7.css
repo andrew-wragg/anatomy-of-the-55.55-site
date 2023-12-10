@@ -46,6 +46,8 @@ section, footer {
   background-color: #000;
   color: #fff;
   position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 
 .full-screen-section {
@@ -54,8 +56,8 @@ section, footer {
 }
 
 .double-screen-section {
-  height: 200vh;
-  min-height: 1500px;
+  height: 150vh;
+  min-height: 1250px;
 }
 
 .half-screen-section {
@@ -96,6 +98,7 @@ right-container {
 
 .section-1 {
   min-height: 1000px;
+  overflow: hidden;
 }
 
 .section-1 left-container {
@@ -205,12 +208,11 @@ right-container {
 }
 
 .section-5 img {
-  max-height: 750px;
-  max-width: 458px;
-  height: 100vh;
-  width: 50vw;
-  object-fit: contain;
   float: right;
+  width: auto;
+  height: auto;
+  max-height: 1684px;
+  max-width: 458px;
 }
 
 .section-6 p {
@@ -251,14 +253,14 @@ right-container {
 
 .section-8 right-container {
   align-items: flex-end;
+  justify-content: flex-end;
 }
 
 .section-8 img {
   float: right;
-  margin-top: -101%;
   width: auto;
   height: auto;
-  max-height: 1684px;
+  max-height: 100%;
   max-width: 100%;
 }
 
@@ -659,23 +661,20 @@ footer p a {
   }
   
   nav button:after {
-    content: '\02162';
+    content: url(hamburger-icon-white.svg);
+    margin: 0;
     float: right;
-    margin-left: 5px;
-    margin-top: -3px;
-    transform: rotate(90deg);
-    font-size: 21px;
-    font-weight: 200;
+    width: 21px;
+    height: 23px;
+    margin-top: 3px;
+    margin-right: 3px;
   }
 
   span.diamond-icon {
-    background-image: url(diamond-icon.svg);
+    background-image: url('diamond-icon.svg');
     background-repeat: no-repeat;
-    margin: 0;
     margin-left: -18px;
     margin-top: -4px;
-    padding: 0;
-    vertical-align: baseline;
     display: inline-block;
     width: 18px;
     height: 20px;
@@ -711,10 +710,6 @@ footer p a {
   nav ul a:hover, nav ul a:active {
     color: #000000;
   }
-
-  nav.active button:after {
-    content: '\02715';
-  }
   
   nav:hover {
     background-color: #FFF;
@@ -722,23 +717,40 @@ footer p a {
     border: #000 0.5px solid;
   }
 
-  nav.active, nav.active button, nav button:hover {
-    background-color: #FFF;
-    color: #000;
+  nav:hover button:after {
+    content: url(hamburger-icon-black.svg);
   }
 
-  nav.active {
+  nav.active-nav, nav.active-nav button, nav button:hover {
+    background-color: #FFF;
+    color: #000;
+    stroke: #000;
+    fill: #000;
+  }
+
+  nav.active-nav button:after {
+    content: '\02715';
+    float: right;
+    font-size: 21px;
+    margin-top: -3px;
+    margin-right: 1px;
+  }
+
+  nav.active-nav {
     border: #000 0.5px solid;
   }
 
   /* FadeIn animation for expanded nav items */
-  nav.active ul {
+  nav.active-nav ul {
     opacity: 1; 
     visibility: visible; 
     transition-duration: 200ms, 0ms; 
     transition-property: opacity, visibility; 
     transition-delay: 0ms, 0ms; 
   }
+/* Classes for animating elements on the page */
+
+/* The following classes can be added to html elements to set their initial state, before animation. */
 .from-bottom {
     transform: translateY(60%);
 }
@@ -762,6 +774,7 @@ footer p a {
     filter: blur(50px);
 }
 
+/* the active class is dynamically added to elements when they are in the viewport, animating them into position */
 .active {
     opacity: 1;
     transform: translateY(0) translateX(0);
@@ -769,6 +782,7 @@ footer p a {
     transition: all 1s ease-out;
 }
 
+/* The following classes are used for the onload animation in the title section */
 .on-load {
     opacity: 0;
     transform: translateY(60%);
