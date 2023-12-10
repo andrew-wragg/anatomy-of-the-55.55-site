@@ -422,12 +422,21 @@ footer p a {
     height: auto;
   }
 
+  .section-1 section-inner-container {
+    height: 100vh;
+  }
+
   .section-1 left-container,  .section-1 right-container {
     z-index: auto;
     padding: 0;
     align-items: center;
     justify-content: center;
     height: auto;
+    flex: 1;
+  }
+
+  .section-1 right-container {
+    flex: 2;
   }
 
   .section-1 right-container img {
@@ -661,7 +670,7 @@ footer p a {
   }
   
   nav button:after {
-    content: url(hamburger-icon-white.svg);
+    content: url('/anatomy-of-the-55.55-site/hamburger-icon-white.svg');
     margin: 0;
     float: right;
     width: 21px;
@@ -671,7 +680,7 @@ footer p a {
   }
 
   span.diamond-icon {
-    background-image: url('diamond-icon.svg');
+    background-image: url('/anatomy-of-the-55.55-site/diamond-icon.svg');
     background-repeat: no-repeat;
     margin-left: -18px;
     margin-top: -4px;
@@ -718,7 +727,7 @@ footer p a {
   }
 
   nav:hover button:after {
-    content: url(hamburger-icon-black.svg);
+    content: url('/anatomy-of-the-55.55-site/hamburger-icon-black.svg');
   }
 
   nav.active-nav, nav.active-nav button, nav button:hover {
