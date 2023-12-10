@@ -31,7 +31,7 @@ nav {
   }
   
   nav button:after {
-    content: url(hamburger-icon-white.svg);
+    content: url('/hamburger-icon-white.svg');
     margin: 0;
     float: right;
     width: 21px;
@@ -41,7 +41,7 @@ nav {
   }
 
   span.diamond-icon {
-    background-image: url('diamond-icon.svg');
+    background-image: url('/diamond-icon.svg');
     background-repeat: no-repeat;
     margin-left: -18px;
     margin-top: -4px;
@@ -88,7 +88,7 @@ nav {
   }
 
   nav:hover button:after {
-    content: url(hamburger-icon-black.svg);
+    content: url('/hamburger-icon-black.svg');
   }
 
   nav.active-nav, nav.active-nav button, nav button:hover {
