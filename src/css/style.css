@@ -420,12 +420,21 @@ footer p a {
     height: auto;
   }
 
+  .section-1 section-inner-container {
+    height: 100vh;
+  }
+
   .section-1 left-container,  .section-1 right-container {
     z-index: auto;
     padding: 0;
     align-items: center;
     justify-content: center;
     height: auto;
+    flex: 1;
+  }
+
+  .section-1 right-container {
+    flex: 2;
   }
 
   .section-1 right-container img {
