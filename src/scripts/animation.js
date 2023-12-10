@@ -38,8 +38,6 @@ export function init() {
         observer.observe(element);
     });
 
-
-
     const myTimeout = setTimeout(animateOnLoad, 1000);
 
 }
