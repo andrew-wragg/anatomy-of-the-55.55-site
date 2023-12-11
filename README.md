@@ -13,8 +13,8 @@ It uses ViteJS for development, with auto-deployment to github pages when pushin
 * All on-scroll animations are hand coded, no animation library was used.
 * The expanding menu is hand coded.
 * The site sizes itself to the viewport height to maximise the available space.
-* The site is responsive and switches to single-column layout at screen widths of 768px or less.
-* The site scales gracefully from 769px to 1920px screen widths.  
+* The site is responsive and switches to single-column layout at screen widths of 1000px or less.
+* The site scales gracefully from 1000px to 1920px screen widths.  
 * Beyond 1920px the site does not scale, due to image quality limitations of the available assets.
 * The Vite project has been configured to not minify or add polyfills to the built project files.  This is for the purpose of readability.  
 
