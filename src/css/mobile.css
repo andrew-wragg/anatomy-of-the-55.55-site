@@ -1,4 +1,4 @@
-@media (width <= 1000px) {
+@media screen and (max-width: 1000px) {
 
     section-inner-container {
       flex-direction: column;
