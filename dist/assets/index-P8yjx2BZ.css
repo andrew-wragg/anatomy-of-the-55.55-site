@@ -395,7 +395,7 @@ footer p a {
   color: #000;
   cursor: pointer;
 }
-@media (width <= 768px) {
+@media screen and (max-width: 1000px) {
 
     section-inner-container {
       flex-direction: column;
@@ -613,7 +613,7 @@ footer p a {
     }
   
   }
-  @media (min-width: 1920px) {
+@media (min-width: 1920px) {
 
     .section-1 h1 {
       font-size: 50px;
